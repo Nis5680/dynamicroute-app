@@ -1,1 +1,8 @@
-<h1>Home Page</h1>
+<h1>UserList</h1>
+<ul>
+    @for(user of users; track user.id) {
+    <div class="user-card">
+        <li><a routerLink="user/{{user.id}}/{{user.name}}">{{user.name}}</a></li>
+    </div>
+}
+</ul>
